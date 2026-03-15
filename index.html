@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skautská doplňovačka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="content-wrapper">
+
+<div class="page-header">
+    <div>
+        <div class="page-title">Skautská doplňovačka</div>
+        <div class="page-subtitle">Soutěžní doplňovačka <a href="https://www.topgal.cz/souteze-skaut" target="_blank">Topgal</a> · stránka neobsahuje správné odpovědi, pouze umožňuje online vyplnění</div>
+    </div>
+    <div class="header-buttons">
+        <button id="btnHelp" onclick="toggleHelp()">Nápověda</button>
+        <button id="btnPrint" onclick="window.print()">Tisk</button>
+        <button id="btnClear" onclick="clearAll()">Vymazat vše</button>
+    </div>
+</div>
+
+<div id="helpBox">
+    <strong>Jak vyplňovat:</strong>
+    <ul>
+        <li>Klikni na <strong>číslo</strong> v políčku → zadej celé slovo najednou</li>
+        <li>Klikni na <strong>políčko</strong> → vyplňuj písmeno po písmenu (šipky pro pohyb)</li>
+        <li>Klikni na <strong>číslo vyplněného slova</strong> → slovo se smaže</li>
+    </ul>
+</div>
+
+<div class="main-layout">
+
+<div class="grid-container">
+    <table class="crossword-table" id="crosswordGrid"></table>
+</div>
+
+<div class="clues-section">
+    <div class="clue-column">
+        <h2>Vodorovně</h2>
+        <div class="clue-item"><span class="clue-num">3.</span><span>Nerezová miska, ve které má čaj i guláš stejnou kovovou pachuť</span></div>
+        <div class="clue-item"><span class="clue-num">5.</span><span>Nejlepší způsob úlevy od bolesti zad po dřevěných postelích</span></div>
+        <div class="clue-item"><span class="clue-num">6.</span><span>Navléká se na šátek, ale na rozdíl od dobráčka ho vždy ztratíš</span></div>
+        <div class="clue-item"><span class="clue-num">10.</span><span>Krabička plná zbytečností, v momentě potřeby je poloprázdná</span></div>
+        <div class="clue-item"><span class="clue-num">11.</span><span>Nejlepší český vynález, kterým ale bohužel v noci fouká a lezou jím brouci</span></div>
+        <div class="clue-item"><span class="clue-num">14.</span><span>Tajná abeceda, kterou umíš napsat jen SOS</span></div>
+        <div class="clue-item"><span class="clue-num">15.</span><span>Člověk, který vymýšlí hry, u kterých se ušpiniš, a pak nadává, že jsi špinavý</span></div>
+        <div class="clue-item"><span class="clue-num">17.</span><span>Noční bdění, kde máš uhlídat celý tábor holýma rukama</span></div>
+        <div class="clue-item"><span class="clue-num">20.</span><span>Na celý tábor jich vlčata mají tak pět párů, vedoucí dvacet</span></div>
+    </div>
+    <div class="clue-column">
+        <h2>Svisle</h2>
+        <div class="clue-item"><span class="clue-num">1.</span><span>Jsou dva typy lidí – ti, co ho dělají 30 vteřin a ti, co ho dělají 30 minut</span></div>
+        <div class="clue-item"><span class="clue-num">2.</span><span>Místo poslední záchrany, aneb přírodní záchod</span></div>
+        <div class="clue-item"><span class="clue-num">4.</span><span>Pokud ho máš dostatečně teplý, zdají se ti sny o dovolené v Karibiku</span></div>
+        <div class="clue-item"><span class="clue-num">7.</span><span>S tímhle sice zabloudíš, akorát trochu přesněji než s kompasem</span></div>
+        <div class="clue-item"><span class="clue-num">8.</span><span>Moment ranní paniky pro všechny, co si ve stanu nechávají půlnoční svačinky</span></div>
+        <div class="clue-item"><span class="clue-num">9.</span><span>Po dvou dnech deštů je všude, ale aspoň máš luxusní lázeňskou kůru</span></div>
+        <div class="clue-item"><span class="clue-num">12.</span><span>Sešit, do kterého loudíš podpisy, i když jsi ten úkol splnil jen „jako"</span></div>
+        <div class="clue-item"><span class="clue-num">13.</span><span>Ranní rituál, při kterém se všichni tváří, že je baví běhat v mokré trávě</span></div>
+        <div class="clue-item"><span class="clue-num">16.</span><span>Motanice na laně; když to nejde rozvázat, prohlásíš to za nový druh.</span></div>
+        <div class="clue-item"><span class="clue-num">18.</span><span>Košile, která je ti buď malá, nebo v ní vypadáš jako stan</span></div>
+        <div class="clue-item"><span class="clue-num">19.</span><span>Nejvěrnější táborový kamarád, který ti pije krev (doslova)</span></div>
+    </div>
+</div>
+
+</div><!-- end main-layout -->
+
+</div><!-- end content-wrapper -->
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
